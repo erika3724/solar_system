@@ -2,8 +2,7 @@ type HeadLine = {
   headLine: string;
 };
 
-export default function Title(param:HeadLine) {
-  const { headLine } = param;
+export default function Title({ headLine }:HeadLine) {
   return (
     <h2>{headLine}</h2>
   );
